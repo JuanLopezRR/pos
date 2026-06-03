@@ -15,7 +15,7 @@ class Settings(BaseSettings):
     SUPABASE_URL: Optional[str] = None
     SUPABASE_KEY: Optional[str] = None
 
-    CORS_ORIGINS: list[str] = ["http://localhost:5173", "http://localhost:3000", "tauri://localhost", "https://lopeztech-pos.onrender.com"]
+    CORS_ORIGINS: str = '["http://localhost:5173","http://localhost:3000","https://lopeztech-pos.onrender.com"]'
 
     class Config:
         env_file = ".env"
